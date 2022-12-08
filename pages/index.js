@@ -1,6 +1,7 @@
 import { supabase } from "../utils/supabase";
 import Link from "next/link";
 import { useUser } from "../context/user";
+import Image from "next/dist/client/image";
 
 export default function Home({ products }) {
   const { user } = useUser();
@@ -9,10 +10,14 @@ export default function Home({ products }) {
     <div className="w-full max-w-3xl mx-auto my-16 px-2">
       {products.map((product) => (
         <Link key={product.id} href={`/${product.id}`}>
-          <a className="p-8 h-40 mb-4 rounded shadow text-xl flex">
-            {product.title}
-          </a>
+          <Image
+            src='{product.tile-url}'
+            alt=""
+            width="100"
+            height="100"/>
+         
         </Link>
+        
       ))}
     </div>
   );
