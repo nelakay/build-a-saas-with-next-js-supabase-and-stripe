@@ -6,8 +6,9 @@ module.exports = {
     extend: {
       colors: {
         celeste_color: {
-          DEFAULT: "#2B2B2B",
-          light: "#404040",
+          DEFAULT: "#161616",
+          light: "#282828",
+          hover: "#2d2d2d",
           blue: "#45C8FF",
           purple: "#7941F2",
           gray: "#dddddd",

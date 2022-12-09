@@ -44,7 +44,7 @@ const Nav = () => {
           onClick={() => router.push("/checkout")}
           className="relative link flex items-center"
         >
-          <span className="absolute top-0 right-0 md:-right-1 h-4 w-4 bg-[#7941F2] text-center rounded-full text-white font-bold">
+          <span className="absolute top-0 right-0 md:-right-1 h-4 w-4 gradient text-center rounded-full text-white font-bold">
             {/* {items.length} */}
           </span>
           <ShoppingCartIcon className="h-8 text-celeste_color-gray" />

@@ -7,18 +7,20 @@ export default function Home({ products }) {
   const { user } = useUser();
   console.log({ user });
   return (
-    <div className="w-full max-w-3xl mx-auto my-16 px-2">
+    <div className="body w-full h-screen py-16">
+    <div className="w-full max-w-3xl mx-auto px-2">
       {products.map((product) => (
         <Link key={product.id} href={`/${product.id}`}>
-          <Image
-            src='{product.tile-url}'
+          <a className="p-8 h-40 mb-4 rounded element text-xl flex">
+            <Image
+            src="/{product.tile-url}"
             alt=""
             width="100"
             height="100"/>
-         
+          </a>
         </Link>
-        
       ))}
+    </div>
     </div>
   );
 }
